@@ -22,22 +22,16 @@ El cerebro de este sistema lo programé en Python, usando Tkinter para la interf
 
 * Dos tipos de usuario: Una terminal rápida y amigable para los clientes, y un panel de control oculto (protegido por la clave "admin") para el administrador.
 * Seguridad en los datos: El programa valida estrictamente que las cédulas ingresadas solo contengan números y no superen los 10 dígitos.
-* Persistencia en archivos de texto: No dependo de bases de datos externas. Todo el registro de vehículos activos y el historial completo de ingresos y salidas del día se guardan y actualizan en tiempo real en archivos .txt.
+* Persistencia en archivos de texto: No depende de bases de datos externas. Todo el registro de vehículos activos y el historial completo de ingresos y salidas del día se guardan y actualizan en tiempo real en archivos .txt.
 * Arquitectura a medida: Como requisito técnico para mi clase, no usé el clásico mainloop() de Tkinter. En su lugar, construí mi propio ciclo infinito (while True) controlando el refresco de la pantalla de forma manual con root.update().
 
 ---
 
 ## ¿Cómo probar el programa?
+ Abre tu terminal o consola y ejecuta el archivo principal:
+   python "TECNOPARKING VERSION 3.py"
 
-Es muy sencillo, no necesitas instalar librerías externas extrañas porque uso las herramientas nativas de Python.
-
-1. Clona este repositorio en tu computador:
-   git clone https://github.com/TU_USUARIO/tecnoparking.git
-
-2. Abre tu terminal o consola y ejecuta el archivo principal:
-   python "TECNOPARKING VERSION 2.py"
-
-3. ¡Listo! Puedes probar ingresando un vehículo en el modo usuario, o entrar al modo administrador para descargar el reporte del día.
+Puedes probar ingresando un vehículo en el modo usuario, o entrar al modo administrador para descargar el reporte del día.
 
 ---
 
